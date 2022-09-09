@@ -1,0 +1,28 @@
+{
+  "name": "board_infinity-intern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shark-Firewall/Board_infinity-Intern.git"
+  },
+  "author": "Rajnish Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shark-Firewall/Board_infinity-Intern/issues"
+  },
+  "homepage": "https://github.com/Shark-Firewall/Board_infinity-Intern#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
