@@ -10,7 +10,7 @@ require("dotenv").config();
 app.use(express.json());
 app.get("/", (req, res) => {
   res.json({
-    message: "Hii",
+    message: "Welcome to Rajnish Assignment Server",
   });
 });
 
@@ -18,7 +18,6 @@ app.get("/list", async (req, res) => {
   try {
     const allTask = await Task.find({});
     res.status(200).json({
-      message: "All Task Found!",
       Task: allTask,
     });
   } catch (err) {
@@ -30,10 +29,8 @@ app.post("/add", async (req, res) => {
   try {
     const task = await Task.create(req.body);
     res.status(200).json({
-      message: "Task created successfully",
       Task: task,
     });
-
   } catch (err) {
     res.status(500).send(err.message);
   }
